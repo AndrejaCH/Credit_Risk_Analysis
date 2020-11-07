@@ -30,7 +30,7 @@ In random oversampling, instances of the minority class are randomly selected an
 </p>
 
 <p align="center">
-<i>(Figure 1: Results for Naive Random Oversampling.)</i>
+<i>Figure 1: Results for Naive Random Oversampling.</i>
 </p>
 
 ### 2. SMOTE Oversampling and Logistic Regression
@@ -49,7 +49,7 @@ The synthetic minority oversampling technique (SMOTE) is another oversampling ap
 </p>
 
 <p align="center">
-<i>(Figure 2: Results for SMOTE Oversampling.)</i>
+<i>Figure 2: Results for SMOTE Oversampling.</i>
 </p>
 
 ### 3. Cluster Centroids Undersampling and Logistic Regression
@@ -68,7 +68,7 @@ Undersampling takes the opposite approach of oversampling. Instead of increasing
 </p>
 
 <p align="center">
-<i>(Figure 3: Results for ClusterCentroids Undersampling)</i>
+<i>Figure 3: Results for ClusterCentroids Undersampling.</i>
 </p>
 
 ### 4. SMOTEENN (Combination of Over and Under Sampling) and Logistic Regression
@@ -87,7 +87,7 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
 </p>
 
 <p align="center">
-<i>(Figure 4: Results for SMOTTEENN Model)</i>
+<i>Figure 4: Results for SMOTTEENN Model.</i>
 </p>
 
 The last two models are from ensemble learning group. The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model (6).
@@ -108,7 +108,7 @@ Instead of having a single, complex tree like the ones created by decision trees
 </p>
 
 <p align="center">
-<i>(Figure 5: Results for Balanced Random Forest Classifier Model)</i>
+<i>Figure 5: Results for Balanced Random Forest Classifier Model.</i>
 </p>
 
 ### 6. Easy Ensemble AdaBoost Classifier
@@ -127,20 +127,20 @@ In AdaBoost Classifier, a model is trained then evaluated. After evaluating the 
 </p>
 
 <p align="center">
-<i>(Figure 6: Results for Easy Ensemble AdaBoost Classifier Model)</i>
+<i>Figure 6: Results for Easy Ensemble AdaBoost Classifier Model.</i>
 </p>
 
 ## Summary
 
 From the results section above we can see how different ML models work on the same data. I would like to start the interpretation of the results with a brief explanation of the outcomes:
 
-**Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data.
+:round_pushpin: **Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data.
 
-**Precision** is the measure of how reliable a positive classification is. A low precision is indicative of a large number of false positives.
+:round_pushpin: **Precision** is the measure of how reliable a positive classification is. A low precision is indicative of a large number of false positives.
 
-**Recall** is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
+:round_pushpin: **Recall** is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
 
-**F1 Score** is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0 (3).
+:round_pushpin: **F1 Score** is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0 (3).
 
 ### Results summary
 

@@ -12,7 +12,7 @@ For this project I am utilizing several models of **supervised machine learning*
 - Environment: **Python 3.7**
 
 ## Results
-In this analysis I used six different algorithms of **supervised machine learning. First three algorithms are based of **resampling techniques** and are designed to deal with **class imbalance**. After the data is resampled, Logistic Regression is used to predict the outcome. Logistic regression predicts **binary outcomes** (1). 
+In this analysis I used six different algorithms of **supervised machine learning**. First four algorithms are based on **resampling techniques** and are designed to deal with **class imbalance**. After the data is resampled, Logistic Regression is used to predict the outcome. Logistic regression predicts **binary outcomes** (1). The last two models are from ensemble learning group. The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model (6).
 
 ### 1. Naive Random Oversampling and Logistic Regression
 In random oversampling, instances of the minority class are randomly selected and added to the training set until the majority and minority classes are balanced (2). 
@@ -72,7 +72,7 @@ Undersampling takes the opposite approach of oversampling. Instead of increasing
 </p>
 
 ### 4. SMOTEENN (Combination of Over and Under Sampling) and Logistic Regression
-SMOTEENN is an approach to resampling that combines aspects of both oversampling and undersampling - Oversample the minority class with SMOTE and clean the resulting data with an undersampling strategy (5). 
+SMOTEENN is an approach to resampling that combines aspects of both oversampling and undersampling - oversample the minority class with SMOTE and clean the resulting data with an undersampling strategy (5). 
 
 - **Accuracy score:** 0.68
 - **Precision**
@@ -90,7 +90,6 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
 <i>Figure 4: Results for SMOTTEENN Model.</i>
 </p>
 
-The last two models are from ensemble learning group. The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model (6).
 
 ### 5. Balanced Random Forest Classifier
 Instead of having a single, complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features (7).
@@ -132,7 +131,7 @@ In AdaBoost Classifier, a model is trained then evaluated. After evaluating the 
 
 ## Summary
 
-From the results section above we can see how different ML models work on the same data. I would like to start the interpretation of the results with a brief explanation of the outcomes:
+From the results section above we can see how different ML models work on the same data. I would like to start the interpretation of the results with a brief explanation of the outcomes.
 
 :round_pushpin: **Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data.
 
@@ -146,17 +145,17 @@ From the results section above we can see how different ML models work on the sa
 
 **First 4 models – resampling and logistic regression**
 
-From the results above we can see that first four models don’t do well based off the accuracy scores. Those scores are 0.65, 0.66, 0.55 and 0.68 for Naive Random Oversampling, SMOTE Oversampling and Cluster Centroids Undersampling and SMOTEENN model respectively, meaning the models were accurate roughly a bit more than half of the time. 
-Precision for all four models is 0.01 for high risk and 1.00 for low risk. Low precision score for high risk is due to large number of false positives, meaning that too many of low risk loans were marked as high risk loans. High score for low risk loans indicate that nearly all low risk scores were marked correctly; however lower recall score indicates (0.61 for naive Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risk loans that were market as high risk, when they actually weren’t. Actual high risk loans have slightly better scores on recall (0.69 for naive Naive Random Oversampling and Logistic Regression, for example) meaning that there weren’t as many false negatives or not too many high risk loans were marked as low risk loans. 
+From the results above we can see that first four models don’t do well based off the **accuracy scores**. Those scores are 0.65, 0.66, 0.55 and 0.68 for Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN model respectively, meaning the models were accurate roughly a bit more than half of the time. 
+**Precision** for all four models is 0.01 for high risk loand and 1.00 for low risk loans. **Low precision score** for high risk loans is due to large number of false positives, meaning that too many of low risk loans were marked as high risk loans. High score for low risk loans indicate that nearly all low risk scores were marked correctly; however, lower **recall score** (0.61 for naive Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risk loans that were market as high risk, when they actually weren’t. Actual high risk loans have slightly better scores on recall (0.69 for naive Naive Random Oversampling and Logistic Regression, for example) meaning that there weren’t as many false negatives or not too many high risk loans were marked as low risk loans. 
 
 **Last 2 models – ensemble models**
 
-Other two models did better. Their accuracy scores are 0.79 and 0.93 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively. Recall scores for both model and both – low and high risk scores and precision for low risk were high, meaning very good accuracy. Precision for high risk loans in both models weren’t high. 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, indicating that there were large number of false positives, meaning that large number of low risk loans were marked as high risk.
+Other two models did better. Their **accuracy scores** are 0.79 and 0.93 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively. **Recall scores** for both model and both – low and high risk scores and precision for low risk were high, meaning very good accuracy. **Precision** for high risk loans in both models weren’t high. 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, indicating that there were **large number of false positives**, meaning that large number of low risk loans were marked as high risk.
 
 ## Recommendation on the model
 
 Since first three models didn’t do well on the test, I wouldn’t use them in the real-word testing without further fine-tuning, for example train model on larger dataset, or look through the coefficients that were use for training data. 
-Other two models showed better results, yet I would use them with caution, since they might be prone to overfitting. If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (prunning) to avoid the overfitting. 
+Other two models showed better results, yet I would use them with caution, since they might be prone to overfitting. If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (pruning) to avoid the overfitting. 
 
 ## References
 

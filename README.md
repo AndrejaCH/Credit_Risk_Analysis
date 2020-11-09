@@ -133,13 +133,13 @@ In AdaBoost Classifier, a model is trained then evaluated. After evaluating the 
 
 From the results section above we can see how different ML models work on the same data. I would like to start the interpretation of the results with a brief explanation of the outcomes.
 
-:round_pushpin: **Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data.
+:round_pushpin: **Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data. *Equation: accuracy score = number of correct prediction / total number of predictions*
 
-:round_pushpin: **Precision** is the measure of how reliable a positive classification is. A low precision is indicative of a large number of false positives.
+:round_pushpin: **Precision** is the measure of how reliable a positive classification is. A low precision is indicative of a large number of false positives. *Equation: Precision = TP/(TP + FP)*
 
-:round_pushpin: **Recall** is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
+:round_pushpin: **Recall** is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives. *Equation: Recall = TP/(TP + FN)*
 
-:round_pushpin: **F1 Score** is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0 (3).
+:round_pushpin: **F1 Score** is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0 (3). *Equation: F1 score = 2(Precision * Sensitivity)/(Precision + Sensitivity)*
 
 ### Results summary
 

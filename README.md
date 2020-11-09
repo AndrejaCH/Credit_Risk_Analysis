@@ -154,7 +154,7 @@ Other two models did better. Their **accuracy scores** are 0.79 and 0.93 for Bal
 
 ## Recommendation on the model
 
-Since first three models didn’t do well on the test, I wouldn’t use them in the real-word testing without further fine-tuning, for example train model on larger dataset, or look through the coefficients that were use for training data. 
+Since first three models didn’t do well on the test, I wouldn’t use them in the real-word testing without further fine-tuning, for example train model on larger dataset, or look through the columns that were use for training the model. 
 Other two models showed better results, yet I would use them with caution, since they might be prone to overfitting. If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (pruning) to avoid the overfitting. 
 
 ## References

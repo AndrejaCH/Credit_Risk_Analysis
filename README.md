@@ -152,7 +152,7 @@ From the results above we can see that first four models don’t do well based o
 
 Other two models did better. Their **accuracy scores** are 0.79 and 0.93 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively. **Recall scores** for both model and both – low and high risk scores and precision for low risk were high, meaning very good accuracy. **Precision** for high risk loans in both models weren’t high. 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, indicating that there were **large number of false positives**, meaning that large number of low risk loans were marked as high risk.
 
-## Recommendation on the model
+### Recommendation on the model
 
 Since first three models didn’t do well on the test, I wouldn’t use them in the real-word testing without further fine-tuning, for example train model on larger dataset, or look through the columns that were use for training the model. 
 Other two models showed better results, yet I would use them with caution, since they might be prone to overfitting. If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (pruning) to avoid the overfitting. 

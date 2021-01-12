@@ -2,7 +2,7 @@
 *Supervised Machine Learning*
 
 ## Project Overview
-For this project I am utilizing several models of **supervised machine learning** on credit loans data in order to predict credit risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. I will be using Python and **Scikit-learn library** and several machine learning models to compare the strengths and weakness of **ML models** and determine how well a model classifies and predicts data. 
+For this project I am utilizing several models of **supervised machine learning** on credit loan data in order to predict credit risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. I will be using Python and **Scikit-learn libraries** and several machine learning models to compare the strengths and weaknesses of **ML models** and determine how well a model classifies and predicts data. 
 
 ## Resources
 - Data Source: LoanStats_2019Q1.csv (file it’s not uploaded to GitHub because of its size)

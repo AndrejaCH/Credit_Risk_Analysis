@@ -145,7 +145,7 @@ From the results section above we can see how different ML models work on the sa
 
 **First 4 models – resampling and logistic regression**
 
-From the results above we can see that first four models don’t do well based off the **accuracy scores**. Those scores are 0.65, 0.66, 0.55 and 0.68 for Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN model respectively, meaning the models were accurate roughly a bit more than half of the time. 
+From the results above we can see that first four models don’t do well based off the **accuracy scores**. Those scores are 0.65, 0.66, 0.55 and 0.68 for Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN model respectively, meaning the models were accurate roughly a bit more than half of the time.<br>
 **Precision** for all four models is 0.01 for high risk loand and 1.00 for low risk loans. **Low precision score** for high risk loans is due to large number of false positives, meaning that too many of low risk loans were marked as high risk loans. High score for low risk loans indicate that nearly all low risk scores were marked correctly; however, lower **recall score** (0.61 for naive Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risk loans that were market as high risk, when they actually weren’t. Actual high risk loans have slightly better scores on recall (0.69 for naive Naive Random Oversampling and Logistic Regression, for example) meaning that there weren’t as many false negatives or not too many high risk loans were marked as low risk loans. 
 
 **Last 2 models – ensemble models**
